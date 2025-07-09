@@ -1,0 +1,15 @@
+{
+  "$schema": "https://wails.io/schemas/config.v2.json",
+  "name": "SI",
+  "outputfilename": "SI",
+  "frontend": {
+    "dir": "frontend/build/client",
+    "install": "",
+    "build": "npm run build",
+    "bridge": ""
+  },
+  "author": {
+    "name": "ptdrpg",
+    "email": "pagielamizael@gmail.com"
+  }
+}
