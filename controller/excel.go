@@ -26,9 +26,9 @@ func (c *Controller) Export() (string, error) {
 
 	headers := []string{
 		"ID", "Prénom", "Nom", "Sexe", "Date de naissance", "Date de décès",
-		"Baptême", "Date Baptême", "Renouvellement Baptême", "Date Renouvellement",
-		"Confession", "Date Confession", "Communion", "Date Communion",
-		"Confirmation", "Date Confirmation", "Mariage", "Couple", "Date Mariage", "Faritra",
+		"Baptême", "Date Baptême", "Renouvellement Baptême",
+		"Confession", "Communion",
+		"Confirmation", "Mariage", "Couple", "Date Mariage", "Faritra",
 	}
 
 	for i, h := range headers {
@@ -46,15 +46,10 @@ func (c *Controller) Export() (string, error) {
 			m.BirthDate,
 			m.DeathDate,
 			m.Baptism,
-			m.BaptismDate,
 			m.BaptismRenew,
-			m.BaptismRenewDate,
 			m.Confession,
-			m.ConfessionDate,
 			m.Communion,
-			m.CommunionDate,
 			m.Confirmation,
-			m.ConfirmationDate,
 			m.Wedding,
 			checkCouple(m.Couple),
 			m.WeddingDate,
